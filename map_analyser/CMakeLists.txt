@@ -1,0 +1,8 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+
+ADD_DEFINITIONS(-std=c++11 -Wall -g -pedantic -Ofast)
+INCLUDE_DIRECTORIES(./)
+
+ADD_EXECUTABLE(analyser main.cpp)
+
+ADD_CUSTOM_TARGET(run ./analyser)
